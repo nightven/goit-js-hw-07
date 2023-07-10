@@ -8,8 +8,8 @@ setGalleryToListHTML(`beforeend`, createGalleryMarkup(galleryItems));
 function createGalleryMarkup(galleryItems) {
   return galleryItems
     .map(
-      ({ description, preview }) => `
-  <li><a href=""><img class ="gallery__image" src="${preview}" alt="${description}" ></a></li>`
+      ({ description, preview }) =>
+        `<li><a href=""><img class ="gallery__image" src="${preview}" alt="${description}"></a></li>`
     )
     .join("");
 }
